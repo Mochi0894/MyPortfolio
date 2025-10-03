@@ -1,0 +1,291 @@
+   
+   
+   
+  /*  
+Student Name: Angel Crook
+File Name: Styles.css
+Date: 9/11/2025
+*/
+
+/* CSS reset */
+
+body, header, nav, main, img, h1, h3, h4{
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+.ticket {
+    
+  border-radius: 100px;
+}
+
+
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+body {
+  font-family: 'Baskerville';
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile nav */
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+img {
+   max-width: 100%;
+display:block;
+} 
+
+h2{color: rgb(208, 184, 163);}
+h3{color: rgb(208, 184, 163);}
+h1{color: rgb(208, 184, 163);}
+p{color: rgb(208, 184, 163);}
+
+body { background-color: rgb(67, 48, 33); }
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+
+  clear: both;
+  display: table;
+}
+
+/*style rules for nav area*/
+
+nav { 
+    background-color: #2a1f14;
+}
+
+nav ul { 
+    list-style: none;
+     margin: 0;
+      text-align: center;
+ }
+
+nav li { 
+    display: inline-block;
+font-size: 1.5em;
+font-family:"Baskerville Old Face",
+ "Hoefler Text", Garamond,
+  "Times New Roman";
+font-weight: bold;
+}
+
+nav li a {
+  color: #f6eee4;
+  display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  transition: 0.3s; 
+}
+
+/* Hover effect */
+
+nav ul li a:hover {
+  color: white;
+  background-color: rgb(149, 114, 100);
+  border-radius: 5px;
+}
+
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+  
+  .mobile {
+    display: none;
+  }
+  .tab-desk {
+    display: block;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+    list-style: none;
+  }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+  
+  .mobile {
+    display: none;
+  }
+  .tab-desk {
+    display: block;
+  }
+  nav ul {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  nav ul li {
+    font-size: 1.2rem;
+  }
+
+  nav ul li a:hover {
+    color: #ffe6d2;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+}
+
+
+                            /*The BOOTSTRAP!!!!!!!!*/
+.custom-callout {
+  background-color: #d1b49b !important; 
+  /*this is to override Bootstrap blue, because beige worked better for my site :) */
+  border-left: 4px solid #68584a;
+  color: #2e1e12;
+  padding: 12px 18px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+                          /* Game Project Stuff */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  margin: 20px;
+  color: rgb(208, 184, 163);
+}
+
+.box {
+  border: 2px solid rgb(208, 184, 163);
+  margin: 15px 0;
+  padding: 15px;
+  overflow: auto;
+}
+
+.text {
+  width: 55%;
+  float: left;
+  color: rgb(208, 184, 163);
+}
+
+.images {
+  float: right;
+}
+
+.images img {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+.npc-images img {
+  width: 120px;
+  height: 120px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+                        /*Animation Project Stuff!!!!!*/
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  
+  margin: 20px;
+  color: rgb(208, 184, 163);
+}
+
+.box {
+  margin: 20px 0;
+  overflow: auto;
+}
+
+.image-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.image-left img {
+  width: 180px;
+  height: auto;
+  border-radius: 15px;
+  background: gray;
+  display: block;
+}
+
+.text {
+  overflow: hidden;
+}
+
+.roblox {
+  float: left;
+  width: 30%;
+  margin: 0 1.5%;
+  text-align: center;
+}
+
+.roblox video {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 15px;
+  background: gray;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.roblox h4 {
+  margin: 10px 0 5px 0;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+video {
+  width: 400px;   /* set the width you want */
+  height: auto;   /* keeps the correct aspect ratio */
+}
